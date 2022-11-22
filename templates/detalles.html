@@ -1,0 +1,64 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+<center><div class="col-md-8"></div></center>
+
+<center><table width="80%" border="0" cellpadding="2%"></table></center>
+
+
+<center><h1 class="display-5" style="color:aliceblue" >Información del Juego</h1></center>
+<br>
+<form class="row g-3" action="/detalles_detalles/" method="GET">
+  <center><div class="col-md-4">
+      <p class="fw-bold" name="nomJuego" id="nomJuego" style="color:aliceblue; font-size: 26px;">{{dat.1}}</p>
+  </div></center>
+  
+  <br>
+  <p class="lead" style="color:aliceblue">Información General</p>
+  <br>
+
+  <div class="col-md-6">
+      <label for="codPuesto" class="form-label" style="color:aliceblue">Desarrolladora:</label>
+      <input type="text" class="form-control" name="desarrollador" id="desarrollador" value="{{dat.2}}" readonly="readonly"></input>
+  </div>
+  <div class="col-md-6">
+      <label for="idArea" class="form-label" style="color:aliceblue">Distribuidor:</label>
+      <input type="text" class="form-control" name="distribuidor" id="distribuidor" value="{{dat.3}}" readonly="readonly"></input>
+  </div>
+  <div class="col-md-12">
+      <label for="puestoJefeSup" class="form-label" style="color:aliceblue">Diseñadores:</label>
+      <input type="text" class="form-control" name="diseñadores" id="diseñadores" value="{{dat.4}}" readonly="readonly"></input>
+  </div>
+
+  <br>
+  <p class="lead" style="color:aliceblue">Datos del Juego</p>
+  <br>
+  
+  <div class="col-md-8">
+      <label for="jornada" class="form-label" style="color:aliceblue">Género:</label>
+      <input type="text" class="form-control" name="genero" id="genero" value="{{dat.5}}" readonly="readonly"></input>
+  </div>
+  <div class="col-md-4">
+      <label for="remunMensual" class="form-label" style="color:aliceblue">Modos de juego:</label>
+      <input type="text" class="form-control" name="modos" id="modos" value="{{dat.6}}" readonly="readonly"></input>
+  </div>
+  <div class="col-md-12">
+      <label for="prestaciones" class="form-label" style="color:aliceblue">Versión más reciente</label>
+      <input type="text" class="form-control" name="version" id="version" value="{{dat.7}}" readonly="readonly"></input>
+  </div>
+  <div class="col-md-12">
+      <label for="descripcionGeneral" class="form-label" style="color:aliceblue">Plataformas disponibles:</label>
+      <input type="text" class="form-control" name="plataformas" id="plataformas" value="{{dat.8}}" readonly="readonly"></input>
+  </div>
+  <br>
+  <p class="lead" style="color:aliceblue">Desarrollo</p>
+  <br>
+  <div class="col-md-12">
+      <label for="funciones" class="form-label" style="color:aliceblue">Fecha de lanzamiento:</label>
+      <input type="text" class="form-control" name="fecha" id="fecha" value="{{dat.9}}" readonly="readonly"></input>
+  </div>
+</form>
+<br>
+<center><a class="btn btn-info" href="/" role="button">Volver</a></center>
+{% endblock %}

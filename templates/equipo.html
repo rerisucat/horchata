@@ -1,0 +1,58 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<div class="container">
+    <center><div class="col-md-8"></div></center>
+<br>
+<h1 class="display-5" style="color:aliceblue">Nuestro equipo de trabajo: </h1>
+<br>
+<br>
+<br>
+<div class="card col-sm-2 position-absolute top-50 start-0 translate-middle-y" style="background-color: #171717; border-color: rgba(0, 0, 0, 0);">
+    <img src="{{ url_for('static', filename='img/Alan.jpg') }}" class="card-img-top rounded-3" height="200px" alt="Hi">
+    <div class="card-body">
+      <center><h5 class="card-title" style="color:aliceblue">Alan Manuel J.S.</h5></center>
+    </div>
+</div>
+<div class="card col-sm-2 position-absolute top-50 start-50 translate-middle" style="background-color: #171717; border-color: rgba(0, 0, 0, 0);">
+    <img src="{{ url_for('static', filename='img/Erick.jpg') }}" class="card-img-top rounded-3" height="200px" alt="Hi">
+    <div class="card-body">
+      <center><h5 class="card-title" style="color:aliceblue">Erick Fernando M.G.</h5></center>
+    </div>
+</div>
+<div class="card col-sm-2 position-absolute top-50 end-0 translate-middle-y" style="background-color: #171717; border-color: rgba(0, 0, 0, 0);">
+    <img src="{{ url_for('static', filename='img/cat.png') }}" class="card-img-top rounded-3" height="200px"  alt="Hi">
+    <div class="card-body">
+      <center><h5 class="card-title" style="color:aliceblue">Arely Dominiq A.R.</h5></center>
+    </div>
+</div>
+</table>
+<br>
+<center><button type="button" class="btn btn-primary position-absolute bottom-0 start-50 translate-middle-x" style="color:rgb(0, 0, 0) ; background-color: aliceblue; border-color: darkgray;"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Nuestras redes
+</button></center>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Redes</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <center><div class="btn-group btn-group-sm" role="group" aria-label="Small button group">
+                <button type="button" class="btn btn-outline-dark"><img src="{{ url_for('static', filename='img/402-facebook2.png') }}"></button>
+                <button type="button" class="btn btn-outline-dark"><img src="{{ url_for('static', filename='img/403-instagram.png') }}"></button>
+                <button type="button" class="btn btn-outline-dark"><img src="{{ url_for('static', filename='img/407-twitter.png') }}"></button>
+                <button type="button" class="btn btn-outline-dark"><img src="{{ url_for('static', filename='img/414-youtube.png') }}"></button>
+            </div></center>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+{% endblock %}
